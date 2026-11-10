@@ -600,7 +600,7 @@ class Cuda13xBackend(_CudaBackend, abc.ABC):
                     conda_pkg=None,
                 ),
                 _CudaBackend.NvidiaSoLib(
-                    soname="libcusparse.so.13",
+                    soname="libcusparse.so.12",  # cuSPARSE kept its soversion 12 in CUDA 13
                     module_name="cusparse",
                     pip_pkg="nvidia-cusparse-cu13",
                     conda_pkg=None,
